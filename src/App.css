@@ -4,8 +4,11 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #f9f9f9;
-  margin-top: 100px;
+  background: linear-gradient(to bottom, lightpink, lightgrey);
+  margin-top: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #head {
@@ -13,20 +16,21 @@
 }
 
 #name, #message {
-  /* width: calc(100% - 22px);  */
-  width: 90%;
+  width: 95%;
   padding: 10px;
   margin-bottom: 10px;
-
 }
 
 button {
   padding: 10px 20px;
   cursor: pointer;
+  width: 25%;
 }
 
 #messageWrapper {
   margin-top: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .message {
