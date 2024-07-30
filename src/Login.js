@@ -34,12 +34,10 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onClick={handleLogin}>Login</button>
+       <a href="/Chat"><button onClick={handleLogin}>Login</button></a> 
       </div>
     </div>
   );
 }
 
 export default Login;
-
-
